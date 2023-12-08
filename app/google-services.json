@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "382127301795",
+    "project_id": "studycadedemo",
+    "storage_bucket": "studycadedemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382127301795:android:4ae2e75f3a6edeac0acb16",
+        "android_client_info": {
+          "package_name": "com.example.studycafeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1Ld6KVt-NdgVjbAKiKHbpUiw98iGNbmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
