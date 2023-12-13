@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:background="#BDA8E3"
+        tools:ignore="MissingConstraints">
+
+        <!-- 뒤로가기 버튼 -->
+        <ImageButton
+            android:id="@+id/backToUserBtn"
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <!-- 타이틀 -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="그룹 스터디룸 예약"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="입력후 확인 버튼을 눌러주세요"
+        android:textColor="#BDA8E3"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rdoCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜 설정" />
+
+        <RadioButton
+            android:id="@+id/rdoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간 설정" />
+        <RadioButton
+            android:id="@+id/rdoPpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용 인원수" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <DatePicker
+                android:datePickerMode="calendar"
+                android:id="@+id/datePicker1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <TimePicker
+                android:timePickerMode="spinner"
+                android:id="@+id/timePicker1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+            <EditText
+                android:id="@+id/resPpl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  주의사항"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" * 이용 인원은 3~6인까지입니다."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" * 이용 시간을 준수해주세요."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" * 뒷사람을 위해 깔끔히 이용해주세요."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" * 위 사항을 어길 시 경고 부과"/>
+
+    <Button
+        android:id="@+id/BtnDayOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="월" />
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="일" />
+        <TextView
+            android:id="@+id/tvHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="시" />
+        <TextView
+            android:id="@+id/groupPpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="명 예약" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BtnToResEndG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예약확정"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

@@ -24,6 +24,15 @@
         <activity android:name=".AdminMainActivity"></activity>
         <activity android:name=".DailyStatsActivity"></activity>
         <activity android:name=".WarnToUserActivity"></activity>
+        <activity android:name=".UserMainActivity"></activity>
+        <activity android:name=".ResTableSeatActivity"></activity>
+        <activity android:name=".ResCafeSeatActivity"></activity>
+        <activity android:name=".ResGroupRoomActivity"></activity>
+        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".AdminEquipActivity"></activity>
+        <activity android:name=".SeatReservationActivity"></activity>
+        <activity android:name=".SeatUseActivity"></activity>
+        <activity android:name=".EquipRentActivity"></activity>
     </application>
 
 </manifest>

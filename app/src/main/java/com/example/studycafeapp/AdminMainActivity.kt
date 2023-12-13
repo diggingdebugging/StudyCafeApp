@@ -20,14 +20,22 @@ class AdminMainActivity : AppCompatActivity() {
             finish()
         }
 
-        // ---------------------현재 사용 좌석들 확인하는 버튼-------------------------------벽돌
-        adminMainBinding.checkCurrentSeatBtn.setOnClickListener {
+        // ------------------비품 현황 확인하는 버튼 --------------------------------- 대충 리싸이클러뷰로 벽돌
+        adminMainBinding.stuffCheckBtn.setOnClickListener {
+            startActivity(Intent(this,AdminEquipActivity::class.java)) //어드민으로 시작
+            finish()
+        }
+
+        //---------------------유저 경고 부과 버튼----------------------  실제로 부과하는거 만들기
+        adminMainBinding.warnToUserBtn.setOnClickListener {
+            startActivity(Intent(this,WarnToUserActivity::class.java)) //어드민으로 시작
 
         }
 
-        // ------------------비품 목록들을 확인하는 버튼 --------------------------------- 대충 리싸이클러뷰로 벽돌
-        adminMainBinding.stuffCheckBtn.setOnClickListener {
-
+        // ---------------------현재 사용 좌석들 확인하는 버튼-------------------------------벽돌
+        adminMainBinding.checkCurrentSeatBtn.setOnClickListener {
+            startActivity(Intent(this,SeatUseActivity::class.java)) //어드민으로 시작
+            finish()
         }
 
         //-------------------- 일일 통계 확인 버튼 -------------------------------  벽돌
@@ -36,11 +44,7 @@ class AdminMainActivity : AppCompatActivity() {
 
         }
 
-        //---------------------유저 경고 부과 버튼----------------------  실제로 부과하는거 만들기
-        adminMainBinding.warnToUserBtn.setOnClickListener {
-            startActivity(Intent(this,WarnToUserActivity::class.java)) //어드민으로 시작
 
-        }
 
     }
 }

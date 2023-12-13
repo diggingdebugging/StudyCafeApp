@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- 타이틀 -->
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:background="#BDA8E3"
+        tools:ignore="MissingConstraints">
+
+        <!-- 뒤로가기 버튼 -->
+        <ImageButton
+            android:id="@+id/backToUserBtn"
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <!-- 타이틀 -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="일반석 예약"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <!-- 창가 텍스트 -->
+    <TextView
+        android:id="@+id/windowTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="창가"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 좌석 선택 버튼 -->
+    <TableLayout
+        android:id="@+id/numberButtonsTableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/windowTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TableRow>
+            <Button
+                android:id="@+id/BtnNum0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/BtnNum1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="2"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/BtnNum2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="3"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/BtnNum3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="4"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/BtnNum4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="5"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:enabled="false" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/BtnNum5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="6"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/BtnNum6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="7"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/BtnNum7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="8"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/BtnNum8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="9"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/BtnNum9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:padding="8dp"
+                android:text="10"
+                android:textColor="@android:color/black"
+                app:backgroundTint="@android:color/darker_gray" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- 선택 정보 표시 -->
+    <LinearLayout
+        android:id="@+id/selectedSeatLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/numberButtonsTableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/seatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택한 자리: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/Seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+    <!-- 입실하기 버튼 -->
+    <Button
+        android:id="@+id/ConfirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="입실하기"
+        app:layout_constraintTop_toBottomOf="@+id/selectedSeatLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

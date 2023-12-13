@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 타이틀 -->
+
+    <LinearLayout
+        android:id="@+id/titleLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#BDA8E3"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <!-- 뒤로가기 버튼 -->
+        <ImageButton
+            android:id="@+id/backToUserBtn2"
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <!-- 타이틀 -->
+        <TextView
+            android:id="@+id/titleTextView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="카페석 예약"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <!-- 버튼2개 -->
+    <LinearLayout
+        android:id="@+id/titleLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#BDA8E3"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout2"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/norMemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="일반회원" />
+
+        <Button
+            android:id="@+id/regMemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="정규회원" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout3"></FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
